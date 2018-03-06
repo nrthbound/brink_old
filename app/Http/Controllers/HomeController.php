@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Article;
+use App\Streamer;
 
 class HomeController extends Controller
 {
@@ -27,7 +28,10 @@ class HomeController extends Controller
         // Get Featured Post
         $article = Article::latest()->first();
 
+        // Get Streamers (Extract this to it's own class)
+        $streamers = Streamer::all();
+
         $articles = Article::orderBy('id', 'asc')->get();
-        return view('pages.home', compact('article', 'articles'));
+        return view('pages.home', compact('article', 'articles', 'streamers'));
     }
 }

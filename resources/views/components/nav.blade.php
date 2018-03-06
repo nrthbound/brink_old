@@ -28,8 +28,12 @@
           Create Article
         </a>
 
-        <a href="/article/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+        <a href="/asset/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
           Create Twitch Asset
+        </a>
+
+        <a href="/streamer/add" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+          Add New Streamer
         </a>
       @endauth
     </div>

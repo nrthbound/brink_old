@@ -1,38 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-
-    <div class="container mx-auto mb-4">
-      <div>
-          <h2>{{ $article->title }}</h2>
-          <p>{{ $article->body }}</p>
-      </div>
-
-    </div>
-
-    <div class="container mx-auto">
+    <div class="container mx-auto bg-white p-4 shadow">
         <div class="flex">
             <!-- Begin left column -->
-            <div class="flex-1">
-                @foreach($articles as $a)
-                  @if (!$loop->first)
-                    {{$a->title}}
-                  @endif
-                @endforeach
+            <div class="flex-1 mr-4">
+              <div class="mb-3 items-center justify-center flex flex-col h-96 relative bg-cover" style="background-image: url('{{asset('images/test-post.jpg')}}');">
+                <span class="text-center font-title uppercase text-white text-4xl flex">Setup Streamlabs OBS</span>
+              </div>
+
+              <div class="bg-test p-4 bg-cover">
+                This is a post.
+              </div>
             </div>
 
             <!-- Begin Right column -->
-            <div class="w-1/4 bg-white mr-8 p-4">
-              <span class="font-bold uppercase text-primary font-title">Streamers</span>
-              <div class="streamer">
-                Streamer 1
-              </div>
-              <div class="streamer">
-                Streamer 1
-              </div>
-              <div class="streamer">
-                Streamer 1
-              </div>
+            <div class="w-1/3 p-4">
+              <span class="font-bold uppercase text-primary font-title mb-4 block">Streamers</span>
+              @foreach($streamers as $s)
+                <div class="streamer mb-2">
+                  {{$s->name}}
+                </div>
+              @endforeach
             </div>
         </div>
     </div>
