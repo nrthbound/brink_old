@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Article;
 
 class HomeController extends Controller
 {
@@ -23,6 +24,10 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('home');
+        // Get Featured Post
+        $article = Article::latest()->first();
+
+        $articles = Article::orderBy('id', 'asc')->get();
+        return view('pages.home', compact('article', 'articles'));
     }
 }

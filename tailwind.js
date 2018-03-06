@@ -46,15 +46,10 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
-  'black': '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  'grey': '#b8c2cc',
-  'grey-light': '#dae1e7',
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
-  'white': '#ffffff',
+  'primary': '#0396FF',
+
+  'white': '#FFFFFF',
+  'grey': '#FAFAFA',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -193,6 +188,9 @@ module.exports = {
   */
 
   fonts: {
+    'title': [
+      'Roboto Condensed'
+    ],
     'sans': [
       'system-ui',
       'BlinkMacSystemFont',
