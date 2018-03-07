@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use GrahamCampbell\Markdown\Facades\Markdown;
 use App\Http\Requests\CreateArticleRequest;
+use App\AvailableTag as Tags;
+use Illuminate\Http\Request;
 use App\Article;
 use App\Tag;
-use App\AvailableTag as Tags;
 
 class ArticleController extends Controller
 {
@@ -27,6 +28,13 @@ class ArticleController extends Controller
         return view('pages.articles', compact('article'));
     }
 
+    public function show(Article $article)
+    {
+        $article->body = Markdown::convertToHtml($article->body);
+        return view('pages.articles.view', compact('article'));
+    }
+
+
     public function create()
     {
         $tags = Tags::all();
@@ -45,10 +53,10 @@ class ArticleController extends Controller
                 $tag->taggable_type = "App\Article";
                 $tag->taggable_id = $article->id;
                 $tag->name = $t;
-                if ($tag->save()) {
-                    return back();
-                }
+                $tag->slug = str_slug($t);
+                $tag->save();
             }
-        }
+				}
+				return back();
     }
 }

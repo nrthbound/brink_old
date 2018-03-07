@@ -2,9 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Http\Request;
-use App\Article;
 use App\Streamer;
+use App\Article;
 
 class HomeController extends Controller
 {

@@ -14,7 +14,7 @@
                     <span class="font-title uppercase">
                       Posted in
                         @foreach($a->tags as $tag)
-                          <a href="" class="text-white no-underline">{{$tag->name}}</a>@if(!$loop->last),@endif
+                          <a href="/tag/{{$tag->slug}}" class="text-white no-underline">{{$tag->name}}</a>@if(!$loop->last),@endif
                         @endforeach
                         on Mar, 6th 2018
                     </span>
@@ -25,7 +25,7 @@
                       <span class="font-title uppercase">
                           Posted in
                             @foreach($a->tags as $tag)
-                              <a href="" class="text-white no-underline">{{$tag->name}}</a>@if(!$loop->last),@endif
+                              <a href="/tag/{{$tag->slug}}" class="text-white no-underline">{{$tag->name}}</a>@if(!$loop->last),@endif
                             @endforeach
                             on Mar, 6th 2018
                         </span>

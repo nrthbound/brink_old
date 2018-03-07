@@ -4,7 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Http\Requests\CreateTagRequest;
-use App\AvailableTag as Tag;
+use App\AvailableTag;
+use App\Tag;
 
 class TagController extends Controller
 {
@@ -19,6 +20,11 @@ class TagController extends Controller
         $this->middleware('auth');
     }
 
+    public function show(Tag $tag)
+    {
+        return $tag::with($tag->taggable_type)->get();
+    }
+
     public function create()
     {
         return view('pages.tags.create');
@@ -26,7 +32,7 @@ class TagController extends Controller
 
     public function save(CreateTagRequest $request)
     {
-        $tag = new Tag;
+        $tag = new AvailableTag;
         $tag->name = $request->name;
         if ($tag->save()) {
             return back();
