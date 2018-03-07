@@ -20,7 +20,7 @@
           <div class="w-1/4">
             <label for="title" class="block mb-1 font-title">Tags</label>
             @foreach($tags as $t)
-              <input type="checkbox" name="tags[]" value="{{$t->name}}"> {{$t->name}} <br/>
+              <input type="checkbox" name="tags[]" value="{{$t->id}}"> {{$t->name}} <br/>
             @endforeach
           </div>
         </div>

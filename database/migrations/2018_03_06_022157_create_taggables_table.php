@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateAvailableTagsTable extends Migration
+class CreateTaggablesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,11 @@ class CreateAvailableTagsTable extends Migration
      */
     public function up()
     {
-        Schema::create('available_tags', function (Blueprint $table) {
+        Schema::create('taggables', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('name', 35)->unique();
+            $table->integer('tag_id');
+            $table->string('taggable_type');
+            $table->string('taggable_id');
             $table->timestamps();
         });
     }
@@ -27,6 +29,6 @@ class CreateAvailableTagsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('available_tags');
+        Schema::dropIfExists('taggables');
     }
 }

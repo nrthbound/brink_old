@@ -8,6 +8,7 @@ use App\Tag;
 
 class Article extends Model
 {
+
     public function user()
     {
         return $this->belongsTo('App\User');
@@ -15,6 +16,6 @@ class Article extends Model
 
     public function tags()
     {
-        return $this->morphMany('App\Tag', 'taggable');
+        return $this->morphToMany('App\Tag', 'taggable')->withTimestamps();
     }
 }

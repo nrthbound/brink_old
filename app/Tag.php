@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Tag extends Model
 {
+
     /**
      * Get the route key for the model.
      *
@@ -13,17 +14,15 @@ class Tag extends Model
      */
     public function getRouteKeyName()
     {
-        return 'slug';
+        return 'name';
     }
 
-    public function taggable()
+    /**
+     * Get all of the posts that are assigned this tag.
+     */
+    public function articles()
     {
-        return $this->morphTo();
+        return $this->morphedByMany('App\Article', 'taggable');
     }
-
-    // public function articles()
-    // {
-    //     return $this->morphedByMany('App\Article', 'taggable');
-    // }
 
 }
