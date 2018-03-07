@@ -10,7 +10,9 @@
         </div>
         @foreach($articles as $article)
           <div class="block mb-4">
+          <a href="/article/{{$article->id}}">
             {{$article->title}}
+          </a>
           </div>
         @endforeach
     </div>
