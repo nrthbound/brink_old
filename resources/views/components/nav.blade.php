@@ -24,7 +24,7 @@
       </a>
 
       @auth
-        <a href="/article/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+        <a href="/articles/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
           Create Article
         </a>
 
@@ -32,7 +32,11 @@
           Create Twitch Asset
         </a>
 
-        <a href="/streamer/add" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+        <a href="/tags/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+          Create New Tag
+        </a>
+
+        <a href="/streamers/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
           Add New Streamer
         </a>
       @endauth

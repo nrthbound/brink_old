@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        //$this->middleware('auth');
     }
 
     /**
@@ -25,13 +25,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        // Get Featured Post
-        $article = Article::latest()->first();
-
         // Get Streamers (Extract this to it's own class)
         $streamers = Streamer::all();
-
-        $articles = Article::orderBy('id', 'asc')->get();
-        return view('pages.home', compact('article', 'articles', 'streamers'));
+        $articles = Article::orderBy('created_at', 'desc')->with('tags')->get();
+        return view('pages.home', compact('articles', 'streamers'));
     }
 }

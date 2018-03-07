@@ -13,7 +13,7 @@
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 </head>
-<body class="antialiased border-t-4 border-primary bg-grey">
+<body class="antialiased border-t-4 border-primary bg-grey-lighter">
     <div id="app">
         @include('components.nav')
 

@@ -48,8 +48,12 @@ let colors = {
 
   'primary': '#0396FF',
 
+  'error': '#FFC9C9',
+
   'white': '#FFFFFF',
-  'grey': '#FAFAFA',
+  'grey-lighter': '#FAFAFA',
+  'grey-light': '#F0F0F0',
+  'grey-medium': '#8F8F8F',
 
   'test': '#CCCCCC',
 
