@@ -1,0 +1,1 @@
+var simplemde = new smde({ element: document.getElementById("editor") });

@@ -16,13 +16,19 @@ class TagController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        $this->middleware('auth')->except(['show']);
     }
 
     public function show(Tag $tag)
     {
         $articles = $tag->articles;
         return view('pages.articles.all', compact('articles'));
+    }
+
+    public function read()
+    {
+        $tags = Tag::orderBy('name', 'asc')->get();
+        return response()->json($tags, 200);
     }
 
     public function create()

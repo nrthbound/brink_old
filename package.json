@@ -22,5 +22,8 @@
         "tailwindcss": "^0.4.3",
         "vue": "^2.5.7"
     },
-    "dependencies": {}
+    "dependencies": {
+        "simplemde": "^1.11.2",
+        "vue-click-outside": "^1.0.7"
+    }
 }

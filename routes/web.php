@@ -15,6 +15,8 @@ Auth::routes();
 // Home
 Route::get('/', 'HomeController@index')->name('home');
 
+Route::post('/upload', 'UploadController@save')->middleware('auth');
+
 // Articles
 Route::get('/articles', 'ArticleController@index')->name('articles');
 Route::get('/article/{article}', 'ArticleController@show');
@@ -28,4 +30,5 @@ Route::post('/streamers/create', 'StreamerController@save')->name('save-streamer
 // Tags
 Route::get('/tag/{tag}', 'TagController@show');
 Route::get('/tags/create', 'TagController@create')->name('create-tag');
+Route::get('/tags', 'TagController@read')->name('get-tags')->middleware('auth');
 Route::post('/tags/create', 'TagController@save')->name('save-tag');

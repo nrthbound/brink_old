@@ -3,6 +3,9 @@
     <a class="no-underline" href="/">
       @include('components.logo')
     </a>
+    <a href="/" class="no-underline font-title font-bold text-primary text-2xl ml-2">
+      Brink &amp; Co
+    </a>
   </div>
   <div class="block lg:hidden">
     <button class="flex items-center px-3 py-2 border rounded text-primary border-primary hover:text-primary hover:border-primary">

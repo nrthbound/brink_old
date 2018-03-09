@@ -19,7 +19,7 @@ class ArticleController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth')->except(['index']);
+        $this->middleware('auth')->except(['index', 'show']);
     }
 
     public function index()
@@ -48,12 +48,10 @@ class ArticleController extends Controller
         $article->user_id = 1;
         $article->body = $request->body;
         if ($article->save()) {
-					if ($request->has('tags')) {
-						foreach($request->tags as $t) {
-							$article->tags()->attach($t);
-						}
-					}
-				}
-				return back();
+            if ($request->has('tags')) {
+                $article->tags()->attach($request->tags);
+            }
+        }
+        return back();
     }
 }

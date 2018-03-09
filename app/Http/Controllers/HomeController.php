@@ -28,7 +28,7 @@ class HomeController extends Controller
     {
         // Get Streamers (Extract this to it's own class)
         $streamers = Streamer::all();
-        $articles = Article::orderBy('created_at', 'desc')->with('tags')->get();
+        $articles = Article::orderBy('created_at', 'desc')->with('tags')->simplePaginate(5);
         return view('pages.home', compact('articles', 'streamers'));
     }
 }

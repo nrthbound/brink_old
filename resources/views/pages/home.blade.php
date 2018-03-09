@@ -8,9 +8,11 @@
 
 
               @foreach($articles as $a)
-                @if($loop->first)
+                @if($a->featured)
                   <div class="mb-3 items-center justify-center flex flex-col h-96 relative bg-cover" style="background-image: url('{{asset('images/test-post.jpg')}}');">
-                    <span class="text-center font-title uppercase text-white text-4xl mb-4 flex">{{$a->title}}</span>
+                    <a class="no-underline" href="/article/{{$a->id}}">
+                      <span class="text-center font-title uppercase text-white text-4xl mb-4 flex">{{$a->title}}</span>
+                    </a>
                     <span class="font-title uppercase">
                       Posted in
                         @foreach($a->tags as $tag)
@@ -21,7 +23,9 @@
                   </div>
                 @else
                   <div class="bg-test items-center justify-center flex flex-col h-32 p-4 mb-4 bg-cover">
-                      <span class="text-center font-title uppercase text-white mb-4 text-2xl flex">{{$a->title}}</span>
+                      <a class="no-underline" href="/article/{{$a->id}}">
+                        <span class="text-center font-title uppercase text-white mb-4 text-2xl flex">{{$a->title}}</span>
+                      </a>
                       <span class="font-title uppercase">
                           Posted in
                             @foreach($a->tags as $tag)
@@ -33,6 +37,7 @@
                 @endif
               @endforeach
 
+              {{ $articles->links() }}
             </div>
 
             <!-- Begin Right column -->

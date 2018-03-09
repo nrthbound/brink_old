@@ -8,6 +8,8 @@
 require('./bootstrap');
 
 window.Vue = require('vue');
+window.smde = require('simplemde');
+
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -15,8 +17,24 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-Vue.component('Tags', require('./components/Tags.vue'));
-
+Vue.component('TagsDropdown', require('./components/Tags/TagsDropdown.vue'));
+Vue.component('TagsViewer', require('./components/Tags/TagsViewer.vue'));
+Vue.component('TagListItem', require('./components/Tags/TagListView.vue'));
 const app = new Vue({
-    el: '#app'
+
+    el: '#app',
+    data () {
+        return {
+            tags: [],
+        };
+    },
+    methods: {
+        toggleTab (tag) {
+            if (tag.assigned) {
+                this.tags.push(tag)
+            } else {
+                this.tags.splice(this.tags.indexOf(tag), 1);
+            }
+        }
+    }
 });

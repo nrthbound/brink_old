@@ -25,7 +25,7 @@ class CreateArticleRequest extends FormRequest
     {
         return [
             'title' => 'required',
-            'body' => 'required',
+            //'body' => 'required',
         ];
     }
 }
