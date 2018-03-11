@@ -7,9 +7,13 @@
 
 require('./bootstrap');
 
-window.Vue = require('vue');
-window.smde = require('simplemde');
+//window.Vue = require('vue');
+import Vue from 'vue';
+import VueCarousel from 'vue-carousel';
 
+Vue.use(VueCarousel);
+
+window.smde = require('simplemde');
 
 /**
  * Next, we will create a fresh Vue application instance and attach it to
@@ -26,15 +30,23 @@ const app = new Vue({
     data () {
         return {
             tags: [],
+            liveTags: [],
         };
     },
+    created () {
+        axios.get('/tags').then(response => {
+            _.each(response.data, (tag) => {
+                tag.assigned = false;
+                this.liveTags.push(tag);
+            });
+        });
+    },
     methods: {
-        toggleTab (tag) {
-            if (tag.assigned) {
-                this.tags.push(tag)
-            } else {
-                this.tags.splice(this.tags.indexOf(tag), 1);
-            }
+        toggleTag (tag) {
+
+        },
+        removeTag (tag) {
+
         }
     }
 });

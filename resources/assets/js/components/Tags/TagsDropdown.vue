@@ -2,7 +2,7 @@
   <div class="tag-dropdown border-grey relative" v-click-outside="hide">
     <i class="fas fa-search absolute pin-"></i>
     <input placeholder="Search Tags" @focus="isVisible" class=" search w-full bg-white border border-grey-lightish p-3 rounded" type="text" v-model="search" />
-    <ul class="list-reset border absolute w-full" v-show="visible">
+    <ul class="list-reset bg-white border absolute w-full" v-show="visible">
       <tag-list-item @toggled="emitTag" v-for="tag in filtered" :key="tag.name" :tag="tag"></tag-list-item>
     </ul>
   </div>
@@ -20,24 +20,25 @@ export default {
       });
     }
   },
+  props: {
+    tags: {
+      type: Array,
+      default: []
+    }
+  },
   directives: {
     ClickOutside
-  },
-  created () {
-    axios.get('/tags').then(response => {
-      this.tags = response.data;
-    });
   },
   data () {
     return {
       assignedTags: [],
       search: '',
-      tags: [],
       visible: false
     };
   },
   methods: {
     emitTag (tag) {
+      console.log(this.tags);
       this.$emit('toggled', tag);
     },
     isVisible () {

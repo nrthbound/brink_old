@@ -5,36 +5,30 @@
         <div class="flex">
             <!-- Begin left column -->
             <div class="flex-1 mr-4">
-
-
-              @foreach($articles as $a)
-                @if($a->featured)
-                  <div class="mb-3 items-center justify-center flex flex-col h-96 relative bg-cover" style="background-image: url('{{asset('images/test-post.jpg')}}');">
+              <carousel :per-page="1">
+              @foreach($featuredArticles as $a)
+                <slide>
+                  <div class="mb-3 items-center justify-center flex flex-col h-96 relative bg-cover" style="background-image: url('{{asset($a->thumbnail)}}');">
                     <a class="no-underline" href="/article/{{$a->id}}">
                       <span class="text-center font-title uppercase text-white text-4xl mb-4 flex">{{$a->title}}</span>
+                    </a>
+                  </div>
+                </slide>
+              @endforeach
+              </carousel>
+              @foreach($articles as $a)
+                  <div class="bg-test items-center justify-center flex flex-col h-32 p-4 mb-4 bg-cover" style="background-image: url('{{asset($a->thumbnail)}}');">
+                    <a class="no-underline" href="/article/{{$a->id}}">
+                      <span class="text-center font-title uppercase text-white mb-4 text-2xl flex">{{$a->title}}</span>
                     </a>
                     <span class="font-title uppercase">
                       Posted in
                         @foreach($a->tags as $tag)
                           <a href="/tag/{{$tag->name}}" class="text-white no-underline">{{$tag->name}}</a>@if(!$loop->last),@endif
                         @endforeach
-                        on Mar, 6th 2018
+                        {{ $a->created_at->diffForHumans() }}
                     </span>
                   </div>
-                @else
-                  <div class="bg-test items-center justify-center flex flex-col h-32 p-4 mb-4 bg-cover">
-                      <a class="no-underline" href="/article/{{$a->id}}">
-                        <span class="text-center font-title uppercase text-white mb-4 text-2xl flex">{{$a->title}}</span>
-                      </a>
-                      <span class="font-title uppercase">
-                          Posted in
-                            @foreach($a->tags as $tag)
-                              <a href="/tag/{{$tag->name}}" class="text-white no-underline">{{$tag->name}}</a>@if(!$loop->last),@endif
-                            @endforeach
-                            on Mar, 6th 2018
-                        </span>
-                  </div>
-                @endif
               @endforeach
 
               {{ $articles->links() }}

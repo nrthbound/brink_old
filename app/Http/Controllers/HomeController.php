@@ -28,7 +28,13 @@ class HomeController extends Controller
     {
         // Get Streamers (Extract this to it's own class)
         $streamers = Streamer::all();
-        $articles = Article::orderBy('created_at', 'desc')->with('tags')->simplePaginate(5);
-        return view('pages.home', compact('articles', 'streamers'));
+
+        // Get all slider posts
+
+        $featuredArticles = Article::where('is_featured', true)->get();
+
+        // Get All Posts
+        $articles = Article::orderBy('created_at', 'desc')->where('is_featured', false)->with('tags')->simplePaginate(5);
+        return view('pages.home', compact('articles', 'featuredArticles', 'streamers'));
     }
 }

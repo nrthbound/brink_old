@@ -3,6 +3,7 @@
 @section('content')
 
 <div class="container mx-auto">
+<img src="{{asset($article->featured_image)}}" alt="">
   <div class="bg-white w-full shadow p-4">
     <div class="text-center">
       <h2 class="font-title mb-8 text-center py-6">

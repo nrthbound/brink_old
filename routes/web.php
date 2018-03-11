@@ -20,6 +20,8 @@ Route::post('/upload', 'UploadController@save')->middleware('auth');
 // Articles
 Route::get('/articles', 'ArticleController@index')->name('articles');
 Route::get('/article/{article}', 'ArticleController@show');
+Route::get('/article/edit/{article}', 'ArticleController@edit');
+Route::post('/article/edit/{article}', 'ArticleController@update');
 Route::get('/articles/create', 'ArticleController@create')->name('create-article');
 Route::post('/articles/create', 'ArticleController@save')->name('save-article');
 

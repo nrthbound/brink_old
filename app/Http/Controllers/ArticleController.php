@@ -4,10 +4,11 @@ namespace App\Http\Controllers;
 
 use GrahamCampbell\Markdown\Facades\Markdown;
 use App\Http\Requests\CreateArticleRequest;
-use App\Tag;
+use App\Http\Controllers\UploadController;
 use Illuminate\Http\Request;
-use App\Article;
 use App\Taggable;
+use App\Article;
+use App\Tag;
 
 class ArticleController extends Controller
 {
@@ -43,10 +44,29 @@ class ArticleController extends Controller
 
     public function save(CreateArticleRequest $request)
     {
+
         $article = new Article;
         $article->title = $request->title;
         $article->user_id = 1;
         $article->body = $request->body;
+
+        // Does the request have a featured image being uploaded?
+        if ($request->has('featured-image')) {
+
+            $featured = new UploadController;
+
+            // Should this article show up in the slider?
+            if ($request->has('is_featured')) {
+                $images = $featured->save('thumbnail_large', $request->file('featured-image'));
+                $article->is_featured = 1;
+            } else {
+                $images = $featured->save('thumbnail_small', $request->file('featured-image'));
+            }
+
+            $article->thumbnail = $images->thumbnail;
+            $article->featured_image = $images->featured;
+        }
+
         if ($article->save()) {
             if ($request->has('tags')) {
                 $article->tags()->attach($request->tags);

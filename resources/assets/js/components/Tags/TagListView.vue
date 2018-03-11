@@ -1,6 +1,6 @@
 <template>
   <li @click.prevent="toggleTag(tag)" class="p-3 cursor-pointer hover:bg-grey-lighter">
-    <i class="far fa-check-square text-primary mr-2 inline-block" v-if="active"></i>
+    <i class="far fa-check-square text-primary mr-2 inline-block" v-if="tag.assigned"></i>
     <button type="button">
       {{tag.name}}
     </button>

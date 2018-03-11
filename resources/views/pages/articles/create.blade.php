@@ -4,7 +4,7 @@
 
 <div class="container mx-auto" id="create-article">
   <div class="bg-white w-full shadow p-4">
-    <form method="POST">
+    <form method="POST" enctype="multipart/form-data">
       {{csrf_field()}}
       <div>
         <h2 class="font-title mb-8">
@@ -29,14 +29,29 @@
                   rows="10">{{old('body')}}</textarea>
             </div>
             <div class="block">
-              <tags-viewer :tags="tags"></tags-viewer>
+              <tags-viewer class="mb-4" @removed="removeTag" :tags="liveTags"></tags-viewer>
             </div>
           </div>
+
+          <!-- Right Column -->
           <div class="w-1/4">
-            <div class="block">
+            <div class="block mb-4">
+                <span class="font-title mb-1 block">Featured Image</span>
+                <div class="block p-4 bg-grey-light">
+                  <input type="file" name="featured-image">
+                </div>
+
+              </div>
+            <div class="block mb-4">
               <label for="title" class="block mb-1 font-title">Tags</label>
-              <tags-dropdown @toggled="toggleTab"></tags-dropdown>
+              <tags-dropdown :tags="liveTags" @toggled="toggleTag"></tags-dropdown>
             </div>
+
+            <div class="block mb-4">
+              Featured post?
+              <input type="checkbox" name="is_featured">
+            </div>
+
           </div>
         </div>
       </div>
