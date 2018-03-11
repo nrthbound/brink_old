@@ -2,4 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700');
 
+.black-overlay {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    transition: 0.3s ease background;
+  }
+
+  &:hover {
+    &:after {
+      background: rgba(0,0,0,0.6);
+    }
+  }
+}
+
 @tailwind utilities;

@@ -22,7 +22,7 @@
         Articles &amp; Guides
       </a>
 
-      <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+      <a href="/tag/Assets" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
         Twitch Assets
       </a>
 

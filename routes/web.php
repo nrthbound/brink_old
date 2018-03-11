@@ -26,6 +26,7 @@ Route::get('/articles/create', 'ArticleController@create')->name('create-article
 Route::post('/articles/create', 'ArticleController@save')->name('save-article');
 
 // Streamers
+Route::get('/streamers', 'StreamerController@show');
 Route::get('/streamers/create', 'StreamerController@create')->name('create-streamer');
 Route::post('/streamers/create', 'StreamerController@save')->name('save-streamer');
 
