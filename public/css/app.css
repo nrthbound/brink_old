@@ -741,6 +741,10 @@ button,
   background-color: #ccc;
 }
 
+.bg-orange {
+  background-color: orange;
+}
+
 .hover\:bg-transparent:hover {
   background-color: transparent;
 }
@@ -775,6 +779,10 @@ button,
 
 .hover\:bg-test:hover {
   background-color: #ccc;
+}
+
+.hover\:bg-orange:hover {
+  background-color: orange;
 }
 
 .bg-bottom {
@@ -873,6 +881,10 @@ button,
   border-color: #ccc;
 }
 
+.border-orange {
+  border-color: orange;
+}
+
 .hover\:border-transparent:hover {
   border-color: transparent;
 }
@@ -907,6 +919,10 @@ button,
 
 .hover\:border-test:hover {
   border-color: #ccc;
+}
+
+.hover\:border-orange:hover {
+  border-color: orange;
 }
 
 .rounded-none {
@@ -2710,6 +2726,10 @@ button,
   color: #ccc;
 }
 
+.text-orange {
+  color: orange;
+}
+
 .hover\:text-transparent:hover {
   color: transparent;
 }
@@ -2744,6 +2764,10 @@ button,
 
 .hover\:text-test:hover {
   color: #ccc;
+}
+
+.hover\:text-orange:hover {
+  color: orange;
 }
 
 .text-xs {
@@ -3166,6 +3190,10 @@ button,
     background-color: #ccc;
   }
 
+  .sm\:bg-orange {
+    background-color: orange;
+  }
+
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -3200,6 +3228,10 @@ button,
 
   .sm\:hover\:bg-test:hover {
     background-color: #ccc;
+  }
+
+  .sm\:hover\:bg-orange:hover {
+    background-color: orange;
   }
 
   .sm\:bg-bottom {
@@ -3298,6 +3330,10 @@ button,
     border-color: #ccc;
   }
 
+  .sm\:border-orange {
+    border-color: orange;
+  }
+
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -3332,6 +3368,10 @@ button,
 
   .sm\:hover\:border-test:hover {
     border-color: #ccc;
+  }
+
+  .sm\:hover\:border-orange:hover {
+    border-color: orange;
   }
 
   .sm\:rounded-none {
@@ -5127,6 +5167,10 @@ button,
     color: #ccc;
   }
 
+  .sm\:text-orange {
+    color: orange;
+  }
+
   .sm\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -5161,6 +5205,10 @@ button,
 
   .sm\:hover\:text-test:hover {
     color: #ccc;
+  }
+
+  .sm\:hover\:text-orange:hover {
+    color: orange;
   }
 
   .sm\:text-xs {
@@ -5584,6 +5632,10 @@ button,
     background-color: #ccc;
   }
 
+  .md\:bg-orange {
+    background-color: orange;
+  }
+
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -5618,6 +5670,10 @@ button,
 
   .md\:hover\:bg-test:hover {
     background-color: #ccc;
+  }
+
+  .md\:hover\:bg-orange:hover {
+    background-color: orange;
   }
 
   .md\:bg-bottom {
@@ -5716,6 +5772,10 @@ button,
     border-color: #ccc;
   }
 
+  .md\:border-orange {
+    border-color: orange;
+  }
+
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -5750,6 +5810,10 @@ button,
 
   .md\:hover\:border-test:hover {
     border-color: #ccc;
+  }
+
+  .md\:hover\:border-orange:hover {
+    border-color: orange;
   }
 
   .md\:rounded-none {
@@ -7545,6 +7609,10 @@ button,
     color: #ccc;
   }
 
+  .md\:text-orange {
+    color: orange;
+  }
+
   .md\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -7579,6 +7647,10 @@ button,
 
   .md\:hover\:text-test:hover {
     color: #ccc;
+  }
+
+  .md\:hover\:text-orange:hover {
+    color: orange;
   }
 
   .md\:text-xs {
@@ -8002,6 +8074,10 @@ button,
     background-color: #ccc;
   }
 
+  .lg\:bg-orange {
+    background-color: orange;
+  }
+
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -8036,6 +8112,10 @@ button,
 
   .lg\:hover\:bg-test:hover {
     background-color: #ccc;
+  }
+
+  .lg\:hover\:bg-orange:hover {
+    background-color: orange;
   }
 
   .lg\:bg-bottom {
@@ -8134,6 +8214,10 @@ button,
     border-color: #ccc;
   }
 
+  .lg\:border-orange {
+    border-color: orange;
+  }
+
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -8168,6 +8252,10 @@ button,
 
   .lg\:hover\:border-test:hover {
     border-color: #ccc;
+  }
+
+  .lg\:hover\:border-orange:hover {
+    border-color: orange;
   }
 
   .lg\:rounded-none {
@@ -9963,6 +10051,10 @@ button,
     color: #ccc;
   }
 
+  .lg\:text-orange {
+    color: orange;
+  }
+
   .lg\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -9997,6 +10089,10 @@ button,
 
   .lg\:hover\:text-test:hover {
     color: #ccc;
+  }
+
+  .lg\:hover\:text-orange:hover {
+    color: orange;
   }
 
   .lg\:text-xs {
@@ -10420,6 +10516,10 @@ button,
     background-color: #ccc;
   }
 
+  .xl\:bg-orange {
+    background-color: orange;
+  }
+
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
   }
@@ -10454,6 +10554,10 @@ button,
 
   .xl\:hover\:bg-test:hover {
     background-color: #ccc;
+  }
+
+  .xl\:hover\:bg-orange:hover {
+    background-color: orange;
   }
 
   .xl\:bg-bottom {
@@ -10552,6 +10656,10 @@ button,
     border-color: #ccc;
   }
 
+  .xl\:border-orange {
+    border-color: orange;
+  }
+
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
   }
@@ -10586,6 +10694,10 @@ button,
 
   .xl\:hover\:border-test:hover {
     border-color: #ccc;
+  }
+
+  .xl\:hover\:border-orange:hover {
+    border-color: orange;
   }
 
   .xl\:rounded-none {
@@ -12381,6 +12493,10 @@ button,
     color: #ccc;
   }
 
+  .xl\:text-orange {
+    color: orange;
+  }
+
   .xl\:hover\:text-transparent:hover {
     color: transparent;
   }
@@ -12415,6 +12531,10 @@ button,
 
   .xl\:hover\:text-test:hover {
     color: #ccc;
+  }
+
+  .xl\:hover\:text-orange:hover {
+    color: orange;
   }
 
   .xl\:text-xs {

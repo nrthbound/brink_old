@@ -17,9 +17,21 @@
               @endforeach
               </carousel>
               @foreach($articles as $a)
-                <a class="no-underline" href="/article/{{$a->id}}">
-                  <div class="black-overlay bg-test h-32 p-4 mb-4 bg-cover" style="background-image: url('{{asset($a->thumbnail)}}');">
-                      <span class="absolute z-50 pin-b font-title uppercase text-white mb-4 text-2xl flex">{{$a->title}}</span>
+                <a class="no-underline relative" href="/article/{{$a->id}}">
+                  <div class="black-overlay h-32 p-4 mb-4 bg-cover" style="background-image: url('{{asset($a->thumbnail)}}');">
+                    <div class="text-wrapper absolute z-50 pin-b ">
+                        <span class="font-title font-bold uppercase text-white mb-2 text-2xl flex">{{$a->title}}</span>
+                        <div class="block mb-4">
+                          @foreach($a->tags as $t)
+                          <a href="/tag/{{$t->name}}" class="text-sm font-title text-orange uppercase no-underline mr-2">
+                            <strong>{{$t->name}}</strong>
+                          </a>
+                          @endforeach
+                          <span>
+                            {{$a->created_at->diffForHumans()}}
+                          </span>
+                        </div>
+                    </div>
                   </div>
                 </a>
               @endforeach

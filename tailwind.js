@@ -58,6 +58,8 @@ let colors = {
 
   'test': '#CCCCCC',
 
+  'orange': 'orange'
+
 }
 
 module.exports = {

@@ -24,6 +24,7 @@ window.smde = require('simplemde');
 Vue.component('TagsDropdown', require('./components/Tags/TagsDropdown.vue'));
 Vue.component('TagsViewer', require('./components/Tags/TagsViewer.vue'));
 Vue.component('TagListItem', require('./components/Tags/TagListView.vue'));
+
 const app = new Vue({
 
     el: '#app',

@@ -33,5 +33,5 @@ Route::post('/streamers/create', 'StreamerController@save')->name('save-streamer
 // Tags
 Route::get('/tag/{tag}', 'TagController@show');
 Route::get('/tags/create', 'TagController@create')->name('create-tag');
-Route::get('/tags', 'TagController@read')->name('get-tags')->middleware('auth');
+Route::get('/tags', 'TagController@read')->name('get-tags');
 Route::post('/tags/create', 'TagController@save')->name('save-tag');
