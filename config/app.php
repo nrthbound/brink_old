@@ -148,6 +148,11 @@ return [
         Illuminate\View\ViewServiceProvider::class,
 
         /*
+         * Brink Specific Service Providers ...
+         */
+        App\Providers\TwitchServiceProvider::class,
+
+        /*
          * Package Service Providers...
          */
 

@@ -42,15 +42,20 @@
             <!-- Begin Right column -->
             <div class="w-1/3 p-4">
               <span class="font-bold uppercase text-primary font-title mb-4 block">Streamers</span>
+{{--  <pre class="p-0 m-0">
+{{ $streamers }}
+</pre>  --}}
               @foreach($streamers as $s)
                 <div class="streamer mb-2 bg-grey-lighter p-4">
                   <div class="flex">
                     <div class="flex-initial mr-4">
-                      <img src="http://placehold.it/42x42" class="rounded-full" alt="">
+                      <img src="{{$s->profile_image_url}}" width="42" height="42" class="rounded-full" alt="">
                     </div>
                     <div class="flex-1">
-                      <p>{{$s->name}}</p>
-                      offline
+                      <p> {{ $s->display_name }} </p>
+                      @if($s->game)<p> {{ $s->game }} </p>@endif
+                      <p> {{$s->live ? 'Live!' : 'offline'}} </p>
+                      {{--  Add viewer count  --}}
                     </div>
                   </div>
                 </div>

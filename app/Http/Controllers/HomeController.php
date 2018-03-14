@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Http\Request;
+use App\Twitch\Twitch;
 use App\Streamer;
 use App\Article;
 
@@ -24,11 +25,11 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Twitch $twitch)
     {
-        // Get Streamers (Extract this to it's own class)
-        $streamers = Streamer::all();
-
+        $streamerList = Streamer::pluck('name')->toArray();
+        $streamers = $twitch->getStreamersStatusByName($streamerList);
+        // dd($streamers);
         // Get all slider posts
 
         $featuredArticles = Article::where('is_featured', true)->get();
