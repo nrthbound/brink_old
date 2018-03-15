@@ -654,6 +654,16 @@ button,
   background: rgba(0, 0, 0, .6);
 }
 
+.featured-post {
+  left: 40px;
+  bottom: 20px;
+}
+
+.normal-post {
+  left: 40px;
+  bottom: 20px;
+}
+
 .container {
   width: 100%;
 }
@@ -709,6 +719,30 @@ button,
   background-color: transparent;
 }
 
+.bg-panel {
+  background-color: #2d3035;
+}
+
+.bg-background {
+  background-color: #22252a;
+}
+
+.bg-nav-link {
+  background-color: #ababab;
+}
+
+.bg-avatar-background {
+  background-color: #141517;
+}
+
+.bg-avatar-border {
+  background-color: #454a52;
+}
+
+.bg-streamer-game {
+  background-color: #969696;
+}
+
 .bg-primary {
   background-color: #0396ff;
 }
@@ -747,6 +781,30 @@ button,
 
 .hover\:bg-transparent:hover {
   background-color: transparent;
+}
+
+.hover\:bg-panel:hover {
+  background-color: #2d3035;
+}
+
+.hover\:bg-background:hover {
+  background-color: #22252a;
+}
+
+.hover\:bg-nav-link:hover {
+  background-color: #ababab;
+}
+
+.hover\:bg-avatar-background:hover {
+  background-color: #141517;
+}
+
+.hover\:bg-avatar-border:hover {
+  background-color: #454a52;
+}
+
+.hover\:bg-streamer-game:hover {
+  background-color: #969696;
 }
 
 .hover\:bg-primary:hover {
@@ -849,6 +907,30 @@ button,
   border-color: transparent;
 }
 
+.border-panel {
+  border-color: #2d3035;
+}
+
+.border-background {
+  border-color: #22252a;
+}
+
+.border-nav-link {
+  border-color: #ababab;
+}
+
+.border-avatar-background {
+  border-color: #141517;
+}
+
+.border-avatar-border {
+  border-color: #454a52;
+}
+
+.border-streamer-game {
+  border-color: #969696;
+}
+
 .border-primary {
   border-color: #0396ff;
 }
@@ -887,6 +969,30 @@ button,
 
 .hover\:border-transparent:hover {
   border-color: transparent;
+}
+
+.hover\:border-panel:hover {
+  border-color: #2d3035;
+}
+
+.hover\:border-background:hover {
+  border-color: #22252a;
+}
+
+.hover\:border-nav-link:hover {
+  border-color: #ababab;
+}
+
+.hover\:border-avatar-background:hover {
+  border-color: #141517;
+}
+
+.hover\:border-avatar-border:hover {
+  border-color: #454a52;
+}
+
+.hover\:border-streamer-game:hover {
+  border-color: #969696;
 }
 
 .hover\:border-primary:hover {
@@ -1515,6 +1621,10 @@ button,
 
 .font-title {
   font-family: Roboto Condensed;
+}
+
+.font-body {
+  font-family: proxima-nova, Segoe UI;
 }
 
 .font-sans {
@@ -2694,6 +2804,30 @@ button,
   color: transparent;
 }
 
+.text-panel {
+  color: #2d3035;
+}
+
+.text-background {
+  color: #22252a;
+}
+
+.text-nav-link {
+  color: #ababab;
+}
+
+.text-avatar-background {
+  color: #141517;
+}
+
+.text-avatar-border {
+  color: #454a52;
+}
+
+.text-streamer-game {
+  color: #969696;
+}
+
 .text-primary {
   color: #0396ff;
 }
@@ -2732,6 +2866,30 @@ button,
 
 .hover\:text-transparent:hover {
   color: transparent;
+}
+
+.hover\:text-panel:hover {
+  color: #2d3035;
+}
+
+.hover\:text-background:hover {
+  color: #22252a;
+}
+
+.hover\:text-nav-link:hover {
+  color: #ababab;
+}
+
+.hover\:text-avatar-background:hover {
+  color: #141517;
+}
+
+.hover\:text-avatar-border:hover {
+  color: #454a52;
+}
+
+.hover\:text-streamer-game:hover {
+  color: #969696;
 }
 
 .hover\:text-primary:hover {
@@ -3158,6 +3316,30 @@ button,
     background-color: transparent;
   }
 
+  .sm\:bg-panel {
+    background-color: #2d3035;
+  }
+
+  .sm\:bg-background {
+    background-color: #22252a;
+  }
+
+  .sm\:bg-nav-link {
+    background-color: #ababab;
+  }
+
+  .sm\:bg-avatar-background {
+    background-color: #141517;
+  }
+
+  .sm\:bg-avatar-border {
+    background-color: #454a52;
+  }
+
+  .sm\:bg-streamer-game {
+    background-color: #969696;
+  }
+
   .sm\:bg-primary {
     background-color: #0396ff;
   }
@@ -3196,6 +3378,30 @@ button,
 
   .sm\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .sm\:hover\:bg-panel:hover {
+    background-color: #2d3035;
+  }
+
+  .sm\:hover\:bg-background:hover {
+    background-color: #22252a;
+  }
+
+  .sm\:hover\:bg-nav-link:hover {
+    background-color: #ababab;
+  }
+
+  .sm\:hover\:bg-avatar-background:hover {
+    background-color: #141517;
+  }
+
+  .sm\:hover\:bg-avatar-border:hover {
+    background-color: #454a52;
+  }
+
+  .sm\:hover\:bg-streamer-game:hover {
+    background-color: #969696;
   }
 
   .sm\:hover\:bg-primary:hover {
@@ -3298,6 +3504,30 @@ button,
     border-color: transparent;
   }
 
+  .sm\:border-panel {
+    border-color: #2d3035;
+  }
+
+  .sm\:border-background {
+    border-color: #22252a;
+  }
+
+  .sm\:border-nav-link {
+    border-color: #ababab;
+  }
+
+  .sm\:border-avatar-background {
+    border-color: #141517;
+  }
+
+  .sm\:border-avatar-border {
+    border-color: #454a52;
+  }
+
+  .sm\:border-streamer-game {
+    border-color: #969696;
+  }
+
   .sm\:border-primary {
     border-color: #0396ff;
   }
@@ -3336,6 +3566,30 @@ button,
 
   .sm\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .sm\:hover\:border-panel:hover {
+    border-color: #2d3035;
+  }
+
+  .sm\:hover\:border-background:hover {
+    border-color: #22252a;
+  }
+
+  .sm\:hover\:border-nav-link:hover {
+    border-color: #ababab;
+  }
+
+  .sm\:hover\:border-avatar-background:hover {
+    border-color: #141517;
+  }
+
+  .sm\:hover\:border-avatar-border:hover {
+    border-color: #454a52;
+  }
+
+  .sm\:hover\:border-streamer-game:hover {
+    border-color: #969696;
   }
 
   .sm\:hover\:border-primary:hover {
@@ -3964,6 +4218,10 @@ button,
 
   .sm\:font-title {
     font-family: Roboto Condensed;
+  }
+
+  .sm\:font-body {
+    font-family: proxima-nova, Segoe UI;
   }
 
   .sm\:font-sans {
@@ -5135,6 +5393,30 @@ button,
     color: transparent;
   }
 
+  .sm\:text-panel {
+    color: #2d3035;
+  }
+
+  .sm\:text-background {
+    color: #22252a;
+  }
+
+  .sm\:text-nav-link {
+    color: #ababab;
+  }
+
+  .sm\:text-avatar-background {
+    color: #141517;
+  }
+
+  .sm\:text-avatar-border {
+    color: #454a52;
+  }
+
+  .sm\:text-streamer-game {
+    color: #969696;
+  }
+
   .sm\:text-primary {
     color: #0396ff;
   }
@@ -5173,6 +5455,30 @@ button,
 
   .sm\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .sm\:hover\:text-panel:hover {
+    color: #2d3035;
+  }
+
+  .sm\:hover\:text-background:hover {
+    color: #22252a;
+  }
+
+  .sm\:hover\:text-nav-link:hover {
+    color: #ababab;
+  }
+
+  .sm\:hover\:text-avatar-background:hover {
+    color: #141517;
+  }
+
+  .sm\:hover\:text-avatar-border:hover {
+    color: #454a52;
+  }
+
+  .sm\:hover\:text-streamer-game:hover {
+    color: #969696;
   }
 
   .sm\:hover\:text-primary:hover {
@@ -5600,6 +5906,30 @@ button,
     background-color: transparent;
   }
 
+  .md\:bg-panel {
+    background-color: #2d3035;
+  }
+
+  .md\:bg-background {
+    background-color: #22252a;
+  }
+
+  .md\:bg-nav-link {
+    background-color: #ababab;
+  }
+
+  .md\:bg-avatar-background {
+    background-color: #141517;
+  }
+
+  .md\:bg-avatar-border {
+    background-color: #454a52;
+  }
+
+  .md\:bg-streamer-game {
+    background-color: #969696;
+  }
+
   .md\:bg-primary {
     background-color: #0396ff;
   }
@@ -5638,6 +5968,30 @@ button,
 
   .md\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .md\:hover\:bg-panel:hover {
+    background-color: #2d3035;
+  }
+
+  .md\:hover\:bg-background:hover {
+    background-color: #22252a;
+  }
+
+  .md\:hover\:bg-nav-link:hover {
+    background-color: #ababab;
+  }
+
+  .md\:hover\:bg-avatar-background:hover {
+    background-color: #141517;
+  }
+
+  .md\:hover\:bg-avatar-border:hover {
+    background-color: #454a52;
+  }
+
+  .md\:hover\:bg-streamer-game:hover {
+    background-color: #969696;
   }
 
   .md\:hover\:bg-primary:hover {
@@ -5740,6 +6094,30 @@ button,
     border-color: transparent;
   }
 
+  .md\:border-panel {
+    border-color: #2d3035;
+  }
+
+  .md\:border-background {
+    border-color: #22252a;
+  }
+
+  .md\:border-nav-link {
+    border-color: #ababab;
+  }
+
+  .md\:border-avatar-background {
+    border-color: #141517;
+  }
+
+  .md\:border-avatar-border {
+    border-color: #454a52;
+  }
+
+  .md\:border-streamer-game {
+    border-color: #969696;
+  }
+
   .md\:border-primary {
     border-color: #0396ff;
   }
@@ -5778,6 +6156,30 @@ button,
 
   .md\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .md\:hover\:border-panel:hover {
+    border-color: #2d3035;
+  }
+
+  .md\:hover\:border-background:hover {
+    border-color: #22252a;
+  }
+
+  .md\:hover\:border-nav-link:hover {
+    border-color: #ababab;
+  }
+
+  .md\:hover\:border-avatar-background:hover {
+    border-color: #141517;
+  }
+
+  .md\:hover\:border-avatar-border:hover {
+    border-color: #454a52;
+  }
+
+  .md\:hover\:border-streamer-game:hover {
+    border-color: #969696;
   }
 
   .md\:hover\:border-primary:hover {
@@ -6406,6 +6808,10 @@ button,
 
   .md\:font-title {
     font-family: Roboto Condensed;
+  }
+
+  .md\:font-body {
+    font-family: proxima-nova, Segoe UI;
   }
 
   .md\:font-sans {
@@ -7577,6 +7983,30 @@ button,
     color: transparent;
   }
 
+  .md\:text-panel {
+    color: #2d3035;
+  }
+
+  .md\:text-background {
+    color: #22252a;
+  }
+
+  .md\:text-nav-link {
+    color: #ababab;
+  }
+
+  .md\:text-avatar-background {
+    color: #141517;
+  }
+
+  .md\:text-avatar-border {
+    color: #454a52;
+  }
+
+  .md\:text-streamer-game {
+    color: #969696;
+  }
+
   .md\:text-primary {
     color: #0396ff;
   }
@@ -7615,6 +8045,30 @@ button,
 
   .md\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .md\:hover\:text-panel:hover {
+    color: #2d3035;
+  }
+
+  .md\:hover\:text-background:hover {
+    color: #22252a;
+  }
+
+  .md\:hover\:text-nav-link:hover {
+    color: #ababab;
+  }
+
+  .md\:hover\:text-avatar-background:hover {
+    color: #141517;
+  }
+
+  .md\:hover\:text-avatar-border:hover {
+    color: #454a52;
+  }
+
+  .md\:hover\:text-streamer-game:hover {
+    color: #969696;
   }
 
   .md\:hover\:text-primary:hover {
@@ -8042,6 +8496,30 @@ button,
     background-color: transparent;
   }
 
+  .lg\:bg-panel {
+    background-color: #2d3035;
+  }
+
+  .lg\:bg-background {
+    background-color: #22252a;
+  }
+
+  .lg\:bg-nav-link {
+    background-color: #ababab;
+  }
+
+  .lg\:bg-avatar-background {
+    background-color: #141517;
+  }
+
+  .lg\:bg-avatar-border {
+    background-color: #454a52;
+  }
+
+  .lg\:bg-streamer-game {
+    background-color: #969696;
+  }
+
   .lg\:bg-primary {
     background-color: #0396ff;
   }
@@ -8080,6 +8558,30 @@ button,
 
   .lg\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .lg\:hover\:bg-panel:hover {
+    background-color: #2d3035;
+  }
+
+  .lg\:hover\:bg-background:hover {
+    background-color: #22252a;
+  }
+
+  .lg\:hover\:bg-nav-link:hover {
+    background-color: #ababab;
+  }
+
+  .lg\:hover\:bg-avatar-background:hover {
+    background-color: #141517;
+  }
+
+  .lg\:hover\:bg-avatar-border:hover {
+    background-color: #454a52;
+  }
+
+  .lg\:hover\:bg-streamer-game:hover {
+    background-color: #969696;
   }
 
   .lg\:hover\:bg-primary:hover {
@@ -8182,6 +8684,30 @@ button,
     border-color: transparent;
   }
 
+  .lg\:border-panel {
+    border-color: #2d3035;
+  }
+
+  .lg\:border-background {
+    border-color: #22252a;
+  }
+
+  .lg\:border-nav-link {
+    border-color: #ababab;
+  }
+
+  .lg\:border-avatar-background {
+    border-color: #141517;
+  }
+
+  .lg\:border-avatar-border {
+    border-color: #454a52;
+  }
+
+  .lg\:border-streamer-game {
+    border-color: #969696;
+  }
+
   .lg\:border-primary {
     border-color: #0396ff;
   }
@@ -8220,6 +8746,30 @@ button,
 
   .lg\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .lg\:hover\:border-panel:hover {
+    border-color: #2d3035;
+  }
+
+  .lg\:hover\:border-background:hover {
+    border-color: #22252a;
+  }
+
+  .lg\:hover\:border-nav-link:hover {
+    border-color: #ababab;
+  }
+
+  .lg\:hover\:border-avatar-background:hover {
+    border-color: #141517;
+  }
+
+  .lg\:hover\:border-avatar-border:hover {
+    border-color: #454a52;
+  }
+
+  .lg\:hover\:border-streamer-game:hover {
+    border-color: #969696;
   }
 
   .lg\:hover\:border-primary:hover {
@@ -8848,6 +9398,10 @@ button,
 
   .lg\:font-title {
     font-family: Roboto Condensed;
+  }
+
+  .lg\:font-body {
+    font-family: proxima-nova, Segoe UI;
   }
 
   .lg\:font-sans {
@@ -10019,6 +10573,30 @@ button,
     color: transparent;
   }
 
+  .lg\:text-panel {
+    color: #2d3035;
+  }
+
+  .lg\:text-background {
+    color: #22252a;
+  }
+
+  .lg\:text-nav-link {
+    color: #ababab;
+  }
+
+  .lg\:text-avatar-background {
+    color: #141517;
+  }
+
+  .lg\:text-avatar-border {
+    color: #454a52;
+  }
+
+  .lg\:text-streamer-game {
+    color: #969696;
+  }
+
   .lg\:text-primary {
     color: #0396ff;
   }
@@ -10057,6 +10635,30 @@ button,
 
   .lg\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .lg\:hover\:text-panel:hover {
+    color: #2d3035;
+  }
+
+  .lg\:hover\:text-background:hover {
+    color: #22252a;
+  }
+
+  .lg\:hover\:text-nav-link:hover {
+    color: #ababab;
+  }
+
+  .lg\:hover\:text-avatar-background:hover {
+    color: #141517;
+  }
+
+  .lg\:hover\:text-avatar-border:hover {
+    color: #454a52;
+  }
+
+  .lg\:hover\:text-streamer-game:hover {
+    color: #969696;
   }
 
   .lg\:hover\:text-primary:hover {
@@ -10484,6 +11086,30 @@ button,
     background-color: transparent;
   }
 
+  .xl\:bg-panel {
+    background-color: #2d3035;
+  }
+
+  .xl\:bg-background {
+    background-color: #22252a;
+  }
+
+  .xl\:bg-nav-link {
+    background-color: #ababab;
+  }
+
+  .xl\:bg-avatar-background {
+    background-color: #141517;
+  }
+
+  .xl\:bg-avatar-border {
+    background-color: #454a52;
+  }
+
+  .xl\:bg-streamer-game {
+    background-color: #969696;
+  }
+
   .xl\:bg-primary {
     background-color: #0396ff;
   }
@@ -10522,6 +11148,30 @@ button,
 
   .xl\:hover\:bg-transparent:hover {
     background-color: transparent;
+  }
+
+  .xl\:hover\:bg-panel:hover {
+    background-color: #2d3035;
+  }
+
+  .xl\:hover\:bg-background:hover {
+    background-color: #22252a;
+  }
+
+  .xl\:hover\:bg-nav-link:hover {
+    background-color: #ababab;
+  }
+
+  .xl\:hover\:bg-avatar-background:hover {
+    background-color: #141517;
+  }
+
+  .xl\:hover\:bg-avatar-border:hover {
+    background-color: #454a52;
+  }
+
+  .xl\:hover\:bg-streamer-game:hover {
+    background-color: #969696;
   }
 
   .xl\:hover\:bg-primary:hover {
@@ -10624,6 +11274,30 @@ button,
     border-color: transparent;
   }
 
+  .xl\:border-panel {
+    border-color: #2d3035;
+  }
+
+  .xl\:border-background {
+    border-color: #22252a;
+  }
+
+  .xl\:border-nav-link {
+    border-color: #ababab;
+  }
+
+  .xl\:border-avatar-background {
+    border-color: #141517;
+  }
+
+  .xl\:border-avatar-border {
+    border-color: #454a52;
+  }
+
+  .xl\:border-streamer-game {
+    border-color: #969696;
+  }
+
   .xl\:border-primary {
     border-color: #0396ff;
   }
@@ -10662,6 +11336,30 @@ button,
 
   .xl\:hover\:border-transparent:hover {
     border-color: transparent;
+  }
+
+  .xl\:hover\:border-panel:hover {
+    border-color: #2d3035;
+  }
+
+  .xl\:hover\:border-background:hover {
+    border-color: #22252a;
+  }
+
+  .xl\:hover\:border-nav-link:hover {
+    border-color: #ababab;
+  }
+
+  .xl\:hover\:border-avatar-background:hover {
+    border-color: #141517;
+  }
+
+  .xl\:hover\:border-avatar-border:hover {
+    border-color: #454a52;
+  }
+
+  .xl\:hover\:border-streamer-game:hover {
+    border-color: #969696;
   }
 
   .xl\:hover\:border-primary:hover {
@@ -11290,6 +11988,10 @@ button,
 
   .xl\:font-title {
     font-family: Roboto Condensed;
+  }
+
+  .xl\:font-body {
+    font-family: proxima-nova, Segoe UI;
   }
 
   .xl\:font-sans {
@@ -12461,6 +13163,30 @@ button,
     color: transparent;
   }
 
+  .xl\:text-panel {
+    color: #2d3035;
+  }
+
+  .xl\:text-background {
+    color: #22252a;
+  }
+
+  .xl\:text-nav-link {
+    color: #ababab;
+  }
+
+  .xl\:text-avatar-background {
+    color: #141517;
+  }
+
+  .xl\:text-avatar-border {
+    color: #454a52;
+  }
+
+  .xl\:text-streamer-game {
+    color: #969696;
+  }
+
   .xl\:text-primary {
     color: #0396ff;
   }
@@ -12499,6 +13225,30 @@ button,
 
   .xl\:hover\:text-transparent:hover {
     color: transparent;
+  }
+
+  .xl\:hover\:text-panel:hover {
+    color: #2d3035;
+  }
+
+  .xl\:hover\:text-background:hover {
+    color: #22252a;
+  }
+
+  .xl\:hover\:text-nav-link:hover {
+    color: #ababab;
+  }
+
+  .xl\:hover\:text-avatar-background:hover {
+    color: #141517;
+  }
+
+  .xl\:hover\:text-avatar-border:hover {
+    color: #454a52;
+  }
+
+  .xl\:hover\:text-streamer-game:hover {
+    color: #969696;
   }
 
   .xl\:hover\:text-primary:hover {

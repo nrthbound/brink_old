@@ -25,13 +25,17 @@ class Twitch {
         'headers' => $headers,
         'query' => ['user_login' => $streamers]
     ]);
-    $streamData = collect(json_decode($streamRes->getBody(), 1)['data']);
+    $streamData = collect(json_decode($streamRes->getBody(), 1)['data']) ?? [];
 
-    $gamesRes = $client->request('GET', 'https://api.twitch.tv/helix/games', [
-        'headers' => $headers,
-        'query' => ['id' => $streamData->pluck('game_id')->toArray()]
-    ]);
-    $gameData = collect(json_decode($gamesRes->getBody(), 1)['data']);
+    if (count($streamData) > 0) {
+      $gamesRes = $client->request('GET', 'https://api.twitch.tv/helix/games', [
+          'headers' => $headers,
+          'query' => ['id' => $streamData->pluck('game_id')->toArray()]
+      ]);
+      $gameData = collect(json_decode($gamesRes->getBody(), 1)['data']);
+    } else {
+      $gameData = collect([]);
+    }
 
     $userList->transform(function ($user) use ($streamData, $gameData) {
         $userStream = $streamData->where('user_id', $user['id'])->first() ?? ['game_id' => null];
@@ -41,10 +45,11 @@ class Twitch {
             'live' =>  !! ($userStream['type'] ?? '' ),
             'viewer_count' =>  $userStream['viewer_count'] ?? 0,
             'game' => $streamingGame['name'] ?? '',
+            'thumbnail_url' => $userStream['thumbnail_url'] ?? ''
         ]);
     });
 
-    return json_decode($userList->toJson());
+    return json_decode($userList->sortByDesc('display_name')->toJson());
 
   }
 

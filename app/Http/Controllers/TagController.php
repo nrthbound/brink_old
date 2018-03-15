@@ -40,6 +40,7 @@ class TagController extends Controller
     {
         $tag = new Tag;
         $tag->name = $request->name;
+        $tag->slug = strtolower(str_slug($request->name));
         if ($tag->save()) {
             return back();
         }

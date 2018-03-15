@@ -47,6 +47,7 @@ class ArticleController extends Controller
 
         $article = new Article;
         $article->title = $request->title;
+        $article->slug = strtolower(str_slug($request->title));
         $article->user_id = 1;
         $article->body = $request->body;
 

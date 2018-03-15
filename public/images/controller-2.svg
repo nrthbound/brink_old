@@ -1,0 +1,32 @@
+<svg width="20" height="12" viewBox="0 0 20 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<title>controller-2</title>
+<desc>Created using Figma</desc>
+<g id="Canvas" transform="translate(4333 -1450)">
+<g id="controller-2">
+<g id="Vector">
+<use xlink:href="#path0_stroke" transform="translate(-4327.2 1453.4)" fill="#696969"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path1_stroke" transform="translate(-4329.6 1455.8)" fill="#696969"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(-4319.4 1454)" fill="#696969"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(-4320.6 1456.4)" fill="#696969"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path2_fill" transform="translate(-4318.2 1456.4)" fill="#696969"/>
+</g>
+<g id="Vector">
+<use xlink:href="#path3_stroke" transform="translate(-4332 1451)" fill="#696969"/>
+</g>
+</g>
+</g>
+<defs>
+<path id="path0_stroke" d="M 0.5 0C 0.5 -0.276142 0.276142 -0.5 0 -0.5C -0.276142 -0.5 -0.5 -0.276142 -0.5 0L 0.5 0ZM -0.5 4.8C -0.5 5.07614 -0.276142 5.3 0 5.3C 0.276142 5.3 0.5 5.07614 0.5 4.8L -0.5 4.8ZM -0.5 0L -0.5 4.8L 0.5 4.8L 0.5 0L -0.5 0Z"/>
+<path id="path1_stroke" d="M 0 -0.5C -0.276142 -0.5 -0.5 -0.276142 -0.5 0C -0.5 0.276142 -0.276142 0.5 0 0.5L 0 -0.5ZM 4.8 0.5C 5.07614 0.5 5.3 0.276142 5.3 0C 5.3 -0.276142 5.07614 -0.5 4.8 -0.5L 4.8 0.5ZM 0 0.5L 4.8 0.5L 4.8 -0.5L 0 -0.5L 0 0.5Z"/>
+<path id="path2_fill" d="M 1.2 0L 0 0L 0 1.2L 1.2 1.2L 1.2 0Z"/>
+<path id="path3_stroke" d="M 4.8 0.5L 13.2 0.5L 13.2 -0.5L 4.8 -0.5L 4.8 0.5ZM 13.2 0.5C 15.5748 0.5 17.5 2.42518 17.5 4.8L 18.5 4.8C 18.5 1.87289 16.1271 -0.5 13.2 -0.5L 13.2 0.5ZM 17.5 4.8C 17.5 7.17483 15.5748 9.1 13.2 9.1L 13.2 10.1C 16.1271 10.1 18.5 7.72711 18.5 4.8L 17.5 4.8ZM 13.2 9.1L 4.8 9.1L 4.8 10.1L 13.2 10.1L 13.2 9.1ZM 4.8 9.1C 2.42518 9.1 0.5 7.17483 0.5 4.8L -0.5 4.8C -0.5 7.72711 1.87289 10.1 4.8 10.1L 4.8 9.1ZM 0.5 4.8C 0.5 2.42518 2.42518 0.5 4.8 0.5L 4.8 -0.5C 1.87289 -0.5 -0.5 1.87289 -0.5 4.8L 0.5 4.8Z"/>
+</defs>
+</svg>

@@ -46,6 +46,15 @@ let defaultConfig = require('tailwindcss/defaultConfig')()
 let colors = {
   'transparent': 'transparent',
 
+  'panel': '#2D3035',
+  'background': '#22252A',
+  'nav-link': '#ABABAB',
+
+  'avatar-background': '#141517',
+  'avatar-border': '#454A52',
+
+  'streamer-game': '#969696',
+
   'primary': '#0396FF',
 
   'error': '#FFC9C9',
@@ -128,6 +137,10 @@ module.exports = {
   fonts: {
     'title': [
       'Roboto Condensed'
+    ],
+    'body': [
+      'proxima-nova',
+      'Segoe UI'
     ],
     'sans': [
       'system-ui',

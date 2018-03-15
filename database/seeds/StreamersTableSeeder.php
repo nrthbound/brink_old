@@ -3,7 +3,7 @@
 use Illuminate\Database\Seeder;
 use Carbon\Carbon;
 
-class UsersTableSeeder extends Seeder
+class StreamersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,10 +12,8 @@ class UsersTableSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('users')->insert([
-            'name' => 'Travis Ray',
-            'email' => 'tripp.machine@gmail.com',
-            'password' => bcrypt('test'),
+        DB::table('streamers')->insert([
+            'name' => 'brinkco',
             'created_at' => Carbon::now()->format('Y-m-d H:i:s'),
             'updated_at' => Carbon::now()->format('Y-m-d H:i:s')
         ]);

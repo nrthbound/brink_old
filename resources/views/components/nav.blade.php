@@ -1,10 +1,7 @@
-<nav class="flex items-center justify-between shadow flex-wrap p-4 bg-white mb-8">
+<nav class="flex items-center justify-between shadow flex-wrap p-4 bg-panel mb-8">
   <div class="flex items-center flex-no-shrink">
     <a class="no-underline" href="/">
       @include('components.logo')
-    </a>
-    <a href="/" class="no-underline font-title font-bold text-primary text-2xl ml-2">
-      Brink &amp; Co
     </a>
   </div>
   <div class="block lg:hidden">
@@ -13,33 +10,37 @@
     </button>
   </div>
   <div class="w-full block lg:flex lg:items-center lg:w-auto items-end">
-    <div class="text-sm lg:flex-grow">
-      <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
-        Home
+    <div class="text-sm lg:flex-grow text-base">
+      <a href="/tag/articles" class="block mt-4 lg:inline-block lg:mt-0 text-nav-link font-title hover:text-primary mr-4 no-underline">
+        Articles
       </a>
 
-      <a href="/" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
-        Articles &amp; Guides
-      </a>
-
-      <a href="/tag/Assets" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+      <a href="/tag/assets" class="block mt-4 lg:inline-block lg:mt-0 text-nav-link font-title hover:text-primary mr-4 no-underline">
         Twitch Assets
       </a>
 
+      <a href="/streamers" class="block mt-4 lg:inline-block lg:mt-0 text-nav-link font-title hover:text-primary mr-4 no-underline">
+        Streams
+      </a>
+
+      <a href="/tag/guides" class="block mt-4 lg:inline-block lg:mt-0 text-nav-link font-title hover:text-primary mr-4 no-underline">
+        Guides
+      </a>
+
       @auth
-        <a href="/articles/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+        <a href="/articles/create" class="block mt-4 lg:inline-block lg:mt-0 text-nav-link font-title hover:text-primary mr-4 no-underline">
           Create Article
         </a>
 
-        <a href="/asset/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+        <a href="/asset/create" class="block mt-4 lg:inline-block lg:mt-0 text-nav-link font-title hover:text-primary mr-4 no-underline">
           Create Twitch Asset
         </a>
 
-        <a href="/tags/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+        <a href="/tags/create" class="block mt-4 lg:inline-block lg:mt-0 text-nav-link font-title hover:text-primary mr-4 no-underline">
           Create New Tag
         </a>
 
-        <a href="/streamers/create" class="block mt-4 lg:inline-block lg:mt-0 text-primary hover:text-primary mr-4 no-underline">
+        <a href="/streamers/create" class="block mt-4 lg:inline-block lg:mt-0 text-nav-link font-title hover:text-primary mr-4 no-underline">
           Add New Streamer
         </a>
       @endauth

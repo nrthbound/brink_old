@@ -21,8 +21,9 @@ class StreamerController extends Controller
 
     public function show(Twitch $twitch)
     {
-        // $streamers = Streamer::pluck('name')->toArray();
-        // $twitch->getStreamersStatusByName($streamers);
+        $streamers = Streamer::pluck('name')->toArray();
+        $streams = $twitch->getStreamersStatusByName($streamers);
+        return view('pages.streamers.view', compact('streams'));
     }
 
     public function create()

@@ -16,9 +16,10 @@
 
     <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/simplemde/latest/simplemde.min.css">
+    <link rel="stylesheet" href="https://use.typekit.net/qwc6ryv.css">
 
 </head>
-<body class="antialiased border-t-4 border-primary bg-grey-lighter">
+<body class="antialiased border-t-2 border-primary bg-background text-base">
     <div id="app">
         @include('components.nav')
 
